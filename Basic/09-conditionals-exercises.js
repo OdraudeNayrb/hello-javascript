@@ -39,7 +39,7 @@ if (edad >= 18) {
 const dif = edad < 18 ? "menor" : "adulto"
 console.log(dif)
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
-let mes = 7
+let mes = 43
 if (mes === 0) {
     console.log("Enero")
 } else if (mes === 1) {
@@ -62,8 +62,10 @@ if (mes === 0) {
     console.log("Ovtubre")
 } else if (mes === 10) {
     console.log("Noviembre")        
-} else {
+} else if (mes === 11) {
     console.log("Diciembre")
+} else {
+    console.log("no existe ese mes")
 }
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
 if (mes === 0) {
@@ -88,8 +90,10 @@ if (mes === 0) {
     console.log("31 dias")
 } else if (mes === 10) {
     console.log("30 dias")        
-} else {
+} else if (mes === 11) {
     console.log("31 dias")
+} else {
+    console.log("no existe ese mes")
 }
 // switch
 
@@ -141,8 +145,11 @@ switch (mes) {
     case 10:
         console.log("Noviembre")
         break;
-    default:
+    case 11:
         console.log("Diciembre")
+        break;
+    default:
+        console.log("no existe ese mes")
 }
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
 switch (mes) {
@@ -179,6 +186,9 @@ switch (mes) {
     case 10:
         console.log("30 dias")
         break;
-    default:
+    case 11:
         console.log("31 dias")
+        break;
+    default:
+        console.log("no existe ese mes")
 }
