@@ -1,12 +1,7 @@
-/*
-Clase 30 - Ejercicios: Bucles
-Vídeo: https://youtu.be/1glVfFxj8a4?t=12732
-*/
-
 // NOTA: Explora diferentes sintaxis de bucles para resolver los ejercicios
 
 // 1. Crea un bucle que imprima los números del 1 al 20
-/*for (let i = 1; i < 21; i++){
+for (let i = 1; i < 21; i++){
     console.log(i)  
 }
 let i = 1
@@ -23,16 +18,16 @@ do {
 let num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 for (let value of num) {
     console.log(value)    
-}*/
+}
 // 2. Crea un bucle que sume todos los números del 1 al 100 y muestre el resultado
-/*let sumf2 = 0
+let sumf2 = 0
 for (let if2 = 1; if2 <= 100; if2++) {
     sumf2 += if2
 }
 console.log(sumf2)
 let iw2 = 0
 let sumw2 = 0
-while (iw2 < 100 /*|| iw2 <= 100) {
+while (iw2 < 100 /*|| iw2 <= 100*/) {
     iw2++
     sumw2 += iw2
     //iw2++
@@ -50,9 +45,9 @@ let sumfo = 0
 for (let value of list) {
     sumfo += value 
 }
-console.log(sumfo)*/
+console.log(sumfo)
 // 3. Crea un bucle que imprima todos los números pares entre 1 y 50
-/*for (let if3 = 1; if3 < 51; if3++) {
+for (let if3 = 1; if3 < 51; if3++) {
     if (if3 % 2 !== 0) {
         continue
     }
@@ -80,10 +75,10 @@ for (let value of listfo3) {
         continue
     }
     console.log(value)
-}*/
+}
 // 4. Dado un array de nombres, usa un bucle para imprimir cada nombre en la consola
 let nombres = ["Alejandro", "Beatriz", "Carlos", "Diana", "Eduardo", "Fernanda", "Gabriel", "Hugo", "Isabel", "Javier"]
-/*for (let if4 = 0; if4 < nombres.length; if4++) {
+for (let if4 = 0; if4 < nombres.length; if4++) {
     console.log(nombres[if4])
 }
 let iw4 = 0
@@ -98,12 +93,12 @@ do {
 } while (idw4 < nombres.length);
  for (let value of nombres) {
     console.log(value)
- }*/
+ }
 // 5. Escribe un bucle que cuente el número de vocales en una cadena de texto
 let vocales = ["a","e","i","o","u"]
 let string5 = "Hola, JavaScript".toLowerCase()
 let numstr = 0
-/*for (let i = 0; i < string5.length; i++) {
+for (let i = 0; i < string5.length; i++) {
     if (vocales.includes(string5[i])) {
         numstr += 1
     } else {
@@ -132,11 +127,11 @@ for (let value of string5) {
         numstr += 1
     }
 }
-console.log(numstr)*/
+console.log(numstr)
 // 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
 let arrnum = [45, 12, 87, 64, 29]
 let mul = 1
-/*for (let i = 0; i < arrnum.length; i++) {
+for (let i = 0; i < arrnum.length; i++) {
     mul *= arrnum[i]
 }
 console.log(mul)
@@ -151,9 +146,9 @@ do {
     mul *= arrnum[idw6]
     idw6++
 } while (idw6 < arrnum.length);
-console.log(mul)*/
+console.log(mul)
 // 7. Escribe un bucle que imprima la tabla de multiplicar del 5
-/*for (let i = 1; i < 13; i++) {
+for (let i = 1; i < 13; i++) {
     let tabla5 = i * 5
     console.log(tabla5)
 }
@@ -173,11 +168,11 @@ do {
  for (const value of xnum) {
     let tabla5 = value * 5
     console.log(tabla5)
- }*/
+ }
 // 8. Usa un bucle para invertir una cadena de texto
 let strainv = "¡Hola, JavaScript!"
 let invstr = ""
-/*for (let if8 = strainv.length -1; if8 >= 0; if8--) {
+for (let if8 = strainv.length -1; if8 >= 0; if8--) {
     invstr += strainv[if8]
 }
 console.log(invstr)
@@ -196,9 +191,9 @@ console.log(invstr)
 for (let value of strainv) {
     invstr = value + invstr
 }
-console.log(invstr)*/
+console.log(invstr)
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
-/*let a = 0
+let a = 0
 let b = 1
 console.log(a)
 console.log(b)
@@ -232,11 +227,11 @@ for (const value of rep) {
         rep.push(fibo)
     }
 }
-console.log(rep)*/
+console.log(rep)
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
 let armix = [45, 87, 2, -33, 90, 56, 3, -78, 14, 11, 39, 65, 81, 22, 47, 73, 29, 88, 50, 6]
 let arpt = []
-/*for (let if10 = 0; if10 < armix.length; if10++) {
+for (let if10 = 0; if10 < armix.length; if10++) {
     if (armix[if10] > 10) {
         arpt.push(armix[if10])
     }
@@ -257,7 +252,7 @@ do {
     }
     idw10++
 } while (idw10 < armix.length);
-console.log(arpt)*/
+console.log(arpt)
 for (const value of armix) {
     if (value > 10) {
         arpt.push(value)
